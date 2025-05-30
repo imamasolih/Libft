@@ -1,21 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/28 20:19:47 by imamasol          #+#    #+#             */
-/*   Updated: 2025/05/29 13:26:18 by imamasol         ###   ########.fr       */
+/*   Created: 2025/05/29 15:05:12 by imamasol          #+#    #+#             */
+/*   Updated: 2025/05/29 16:03:53 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t	ft_strlen(char *c)
+char	*ft_strchr(const char *str, int c)
 {
-	size_t n;
+	while (*str)
+	{
+		if (*str == c)
+			return ((char *)str);
+		str++;
+	}
+	if (c == 0)
+		return ((char *)str);
 
-	n = 0;
-	while (c[n])
-		n++;
-	return (n);
+	return (NULL);
 }

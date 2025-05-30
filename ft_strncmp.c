@@ -1,21 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/28 20:19:47 by imamasol          #+#    #+#             */
-/*   Updated: 2025/05/29 13:26:18 by imamasol         ###   ########.fr       */
+/*   Created: 2025/05/29 16:25:29 by imamasol          #+#    #+#             */
+/*   Updated: 2025/05/29 21:14:16 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t	ft_strlen(char *c)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	size_t n;
-
-	n = 0;
-	while (c[n])
-		n++;
-	return (n);
+	while ((n > 0) && *s1 && *s2)
+	{
+		if (*s1 != *s2)
+			return (*s1 - *s2);
+		s1++;
+		s2++;
+		n--;
+	}
+	if (n == 0)
+		return (0);
+	return (*s1 - *s2);
 }

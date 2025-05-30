@@ -1,21 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/28 20:19:47 by imamasol          #+#    #+#             */
-/*   Updated: 2025/05/29 13:26:18 by imamasol         ###   ########.fr       */
+/*   Created: 2025/05/29 23:07:18 by imamasol          #+#    #+#             */
+/*   Updated: 2025/05/30 12:07:20 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t	ft_strlen(char *c)
+int	ft_memcmp(const void *ptr1, const void *ptr2, size_t num)
 {
-	size_t n;
+	const unsigned char *s1;
+	const unsigned char *s2;
 
-	n = 0;
-	while (c[n])
-		n++;
-	return (n);
+	s1 = (const unsigned char *)ptr1;
+	s2 = (const unsigned char *)ptr2;
+
+	while (num > 0)
+	{
+		if (*s1 != *s2)
+			return (*s1 - *s2);
+		s1++;
+		s2++;
+		num--;
+	}
+	return 0;	
 }

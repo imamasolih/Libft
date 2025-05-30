@@ -1,21 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/28 20:19:47 by imamasol          #+#    #+#             */
-/*   Updated: 2025/05/29 13:26:18 by imamasol         ###   ########.fr       */
+/*   Created: 2025/05/28 22:40:39 by imamasol          #+#    #+#             */
+/*   Updated: 2025/05/29 16:26:57 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t	ft_strlen(char *c)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	size_t n;
+	size_t			i;
+	unsigned char	*d;
+	unsigned char	*s;
 
-	n = 0;
-	while (c[n])
-		n++;
-	return (n);
+	i = 0;
+	d = (unsigned char *)dest;
+	s = (unsigned char *)src;
+	while (i < n)
+		d[i] = s[i++];
+	return (d);
 }

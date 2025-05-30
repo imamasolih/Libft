@@ -1,21 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/28 20:19:47 by imamasol          #+#    #+#             */
-/*   Updated: 2025/05/29 13:26:18 by imamasol         ###   ########.fr       */
+/*   Created: 2025/05/28 22:27:51 by imamasol          #+#    #+#             */
+/*   Updated: 2025/05/28 22:39:22 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t	ft_strlen(char *c)
+void ft_bzero(void *ptr, size_t n)
 {
-	size_t n;
-
-	n = 0;
-	while (c[n])
-		n++;
-	return (n);
+	size_t i;
+	unsigned char *c;
+	
+	i = 0;
+	c = (unsigned char *)ptr;
+	
+	while (i < n)
+		c[i++] = 0;
+	
 }
