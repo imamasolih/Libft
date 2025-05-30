@@ -6,19 +6,10 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 13:32:57 by imamasol          #+#    #+#             */
-/*   Updated: 2025/05/29 16:27:26 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/05/30 17:59:04 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t	ft_strlen(char *c)
-{
-	size_t	n;
-
-	n = 0;
-	while (c[n])
-		n++;
-	return (n);
-}
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	n;

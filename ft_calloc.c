@@ -1,24 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/29 12:59:13 by imamasol          #+#    #+#             */
-/*   Updated: 2025/05/30 17:59:19 by imamasol         ###   ########.fr       */
+/*   Created: 2025/05/30 17:24:45 by imamasol          #+#    #+#             */
+/*   Updated: 2025/05/30 18:38:49 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t size)
+void	*ft_calloc(size_t num, size_t size)
 {
-	size_t	n;
+	void *c;
 
-	n = 0;
-	if (size == 0)
-		return (ft_strlen(src));
-	while (n < (size - 1) && src[n])
-		dst[n] = src[n++];
-	dst[n] = 0;
-	return (ft_strlen(src));
+	if (size && ((num * size) / size != num))
+		return (NULL);
+	c = malloc(num * size);
+	if (c == NULL)
+		return (NULL);
+	ft_memset(c, 0, num * size);
+	return (c);
 }
