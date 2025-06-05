@@ -6,9 +6,11 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/28 22:40:39 by imamasol          #+#    #+#             */
-/*   Updated: 2025/05/29 16:26:57 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/06/05 17:16:27 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
@@ -20,6 +22,9 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	d = (unsigned char *)dest;
 	s = (unsigned char *)src;
 	while (i < n)
-		d[i] = s[i++];
-	return (d);
+	{
+		d[i] = s[i];
+		i++;
+	}
+	return (dest);
 }

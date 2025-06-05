@@ -6,9 +6,11 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 15:05:12 by imamasol          #+#    #+#             */
-/*   Updated: 2025/05/29 16:03:53 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/06/05 16:13:12 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strchr(const char *str, int c)
 {

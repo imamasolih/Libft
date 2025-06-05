@@ -6,11 +6,13 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/26 19:10:05 by imamasol          #+#    #+#             */
-/*   Updated: 2025/05/26 19:12:13 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/06/05 18:04:15 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(char c)
+#include "libft.h"
+
+int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
 		return (1);

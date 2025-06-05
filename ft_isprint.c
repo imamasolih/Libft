@@ -6,11 +6,13 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/26 19:21:58 by imamasol          #+#    #+#             */
-/*   Updated: 2025/05/26 19:23:58 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/06/05 18:04:25 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(char c)
+#include "libft.h"
+
+int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)
 		return (1);

@@ -6,9 +6,11 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/30 12:10:15 by imamasol          #+#    #+#             */
-/*   Updated: 2025/05/30 16:16:25 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/06/05 17:46:11 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strnstr(const char *big, const char *srch, size_t n)
 {
@@ -16,17 +18,15 @@ char	*ft_strnstr(const char *big, const char *srch, size_t n)
 	size_t	j;
 
 	if (!(*srch))
-		return (big);
+		return ((char *)big);
 	i = 0;
 	while (n > i && big[i])
 	{
 		j = 0;
-		while (big[i + j] == srch[j] && n > (i + j))
-		{
-			if (!(srch[j]))
-				return (&big[i]);
+		while (big[i + j] && srch[j] && i + j < n && big[i + j] == srch[j])
 			j++;
-		}
+		if (!srch[j])
+			return (char *)(big + i);
 		i++;
 	}
 	return (NULL);

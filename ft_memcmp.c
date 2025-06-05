@@ -6,9 +6,11 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 23:07:18 by imamasol          #+#    #+#             */
-/*   Updated: 2025/05/30 12:07:20 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/06/05 16:12:06 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_memcmp(const void *ptr1, const void *ptr2, size_t num)
 {

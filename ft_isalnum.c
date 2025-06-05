@@ -6,11 +6,13 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/26 19:12:46 by imamasol          #+#    #+#             */
-/*   Updated: 2025/05/26 19:16:00 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/06/05 18:04:03 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(char c)
+#include "libft.h"
+
+int	ft_isalnum(int c)
 {
 	if (c >= '0' && c <= '9')
 		return (1);

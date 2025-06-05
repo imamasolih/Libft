@@ -6,9 +6,11 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 12:59:13 by imamasol          #+#    #+#             */
-/*   Updated: 2025/05/30 17:59:19 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/06/05 17:24:49 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
@@ -18,7 +20,10 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	if (size == 0)
 		return (ft_strlen(src));
 	while (n < (size - 1) && src[n])
-		dst[n] = src[n++];
+		{
+			dst[n] = src[n];
+			n++;
+		}
 	dst[n] = 0;
 	return (ft_strlen(src));
 }

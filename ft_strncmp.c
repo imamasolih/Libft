@@ -6,9 +6,11 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 16:25:29 by imamasol          #+#    #+#             */
-/*   Updated: 2025/05/29 21:14:16 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/06/05 16:14:15 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

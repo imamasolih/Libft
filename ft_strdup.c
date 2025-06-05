@@ -6,9 +6,11 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/30 18:20:23 by imamasol          #+#    #+#             */
-/*   Updated: 2025/05/30 18:51:17 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/06/05 16:13:20 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strdup(const char *s)
 {

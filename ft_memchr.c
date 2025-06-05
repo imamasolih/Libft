@@ -6,9 +6,11 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 21:15:07 by imamasol          #+#    #+#             */
-/*   Updated: 2025/05/30 11:56:29 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/06/05 16:11:57 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	*ft_memchr(const void *ptr, int value, size_t num)
 {

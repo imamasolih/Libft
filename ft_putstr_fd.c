@@ -1,26 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/30 17:24:45 by imamasol          #+#    #+#             */
-/*   Updated: 2025/06/05 16:01:02 by imamasol         ###   ########.fr       */
+/*   Created: 2025/06/04 21:28:52 by imamasol          #+#    #+#             */
+/*   Updated: 2025/06/05 16:13:00 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_calloc(size_t num, size_t size)
+void ft_putstr_fd(char *s, int fd)
 {
-	void *c;
-
-	if (size && ((num * size) / size != num))
-		return (NULL);
-	c = malloc(num * size);
-	if (c == NULL)
-		return (NULL);
-	ft_memset(c, 0, num * size);
-	return (c);
+	while (*s)
+		write(fd, s++, 1);
 }

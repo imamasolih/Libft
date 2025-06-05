@@ -6,9 +6,11 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 14:54:33 by imamasol          #+#    #+#             */
-/*   Updated: 2025/05/29 16:24:43 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/06/05 16:15:10 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_toupper(int c)
 {

@@ -6,9 +6,11 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/30 16:18:11 by imamasol          #+#    #+#             */
-/*   Updated: 2025/05/30 17:19:26 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/06/05 15:37:04 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {

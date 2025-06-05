@@ -6,9 +6,11 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/28 23:04:11 by imamasol          #+#    #+#             */
-/*   Updated: 2025/05/29 16:27:08 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/06/05 17:23:42 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
@@ -22,12 +24,18 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	if (d > s)
 	{
 		while (n > 0)
-			d[n--] = s[n];
+			{
+				n--;
+				d[n] = s[n];
+			}
 	}
 	else
 	{
 		while (i < n)
-			d[i] = s[i++];
+			{
+				d[i] = s[i];
+				i++;
+			}
 	}
-	return (d);
+	return (dest);
 }
