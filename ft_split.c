@@ -6,17 +6,18 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/31 16:58:22 by imamasol          #+#    #+#             */
-/*   Updated: 2025/06/06 10:58:04 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/06/06 14:38:53 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void	ft_freespt(char **arr, int ind)
+static char	**ft_freespt(char **arr, int ind)
 {
 	while (--ind >= 0)
 		free(arr[ind]);
 	free(arr);
+	return (NULL);
 }
 
 static int	ft_jump(char const *str, char c, int n)
@@ -46,12 +47,11 @@ static char	**ft_mainfunc(char **arr, char const *str, char c)
 	{
 		j = ft_jump(str, c, i);
 		i = ft_move(str, c, j);
+		if (!str[j])
+			break ;
 		arr[k] = (char *)malloc(i - j + 1);
 		if (!arr[k])
-		{
-			ft_freespt(arr, k);
-			return (NULL);
-		}
+			return (ft_freespt(arr, k));
 		tmp = arr[k++];
 		while ((str[j] != c) && str[j])
 			*tmp++ = str[j++];
@@ -68,7 +68,7 @@ char	**ft_split(char const *s, char c)
 	char	**ret;
 
 	j = 0;
-	tmp = s;
+	tmp = (char *)s;
 	while (*tmp)
 	{
 		if (*tmp != c)
