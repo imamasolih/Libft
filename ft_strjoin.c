@@ -6,7 +6,7 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/31 14:44:01 by imamasol          #+#    #+#             */
-/*   Updated: 2025/06/05 16:13:35 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/06/06 11:00:29 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char *ret;
-	char *temp;
-	size_t s1_len;
-	size_t s2_len;
+	char	*ret;
+	char	*temp;
+	size_t	s1_len;
+	size_t	s2_len;
 
 	s1_len = ft_strlen(s1);
 	s2_len = ft_strlen(s2);

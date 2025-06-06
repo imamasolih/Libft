@@ -6,7 +6,7 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/30 18:20:23 by imamasol          #+#    #+#             */
-/*   Updated: 2025/06/05 16:13:20 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/06/06 10:59:38 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strdup(const char *s)
 {
-	size_t len;
-	char *temp;
-	char *c;
+	size_t	len;
+	char	*temp;
+	char	*c;
 
 	len = ft_strlen(s);
 	c = (char *)malloc(len + 1);

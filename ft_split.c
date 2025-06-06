@@ -6,36 +6,19 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/31 16:58:22 by imamasol          #+#    #+#             */
-/*   Updated: 2025/06/05 16:13:07 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/06/06 10:58:04 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_wordct(char const *str, char c)
-{
-	int	j;
-
-	j = 0;
-	while (*str)
-	{
-		if (*str != c)
-		{
-			j++;
-			while (*str && *str != c)
-				str++;
-		}
-		else
-			str++;
-	}
-	return (j);
-}
 static void	ft_freespt(char **arr, int ind)
 {
 	while (--ind >= 0)
 		free(arr[ind]);
 	free(arr);
 }
+
 static int	ft_jump(char const *str, char c, int n)
 {
 	while ((str[n] == c) && str[n])
@@ -80,9 +63,24 @@ static char	**ft_mainfunc(char **arr, char const *str, char c)
 
 char	**ft_split(char const *s, char c)
 {
+	int		j;
+	char	*tmp;
 	char	**ret;
 
-	ret = (char **)malloc((ft_wordct(s, c) + 1) * sizeof(char *));
+	j = 0;
+	tmp = s;
+	while (*tmp)
+	{
+		if (*tmp != c)
+		{
+			j++;
+			while (*tmp && *tmp != c)
+				tmp++;
+		}
+		else
+			tmp++;
+	}
+	ret = (char **)malloc((j + 1) * sizeof(char *));
 	if (!ret)
 		return (NULL);
 	return (ft_mainfunc(ret, s, c));

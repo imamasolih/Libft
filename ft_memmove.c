@@ -6,7 +6,7 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/28 23:04:11 by imamasol          #+#    #+#             */
-/*   Updated: 2025/06/05 17:23:42 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/06/06 10:48:00 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,18 +24,18 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	if (d > s)
 	{
 		while (n > 0)
-			{
-				n--;
-				d[n] = s[n];
-			}
+		{
+			n--;
+			d[n] = s[n];
+		}
 	}
 	else
 	{
 		while (i < n)
-			{
-				d[i] = s[i];
-				i++;
-			}
+		{
+			d[i] = s[i];
+			i++;
+		}
 	}
 	return (dest);
 }

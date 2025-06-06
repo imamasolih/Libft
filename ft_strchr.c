@@ -6,7 +6,7 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 15:05:12 by imamasol          #+#    #+#             */
-/*   Updated: 2025/06/05 16:13:12 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/06/06 10:59:01 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,5 @@ char	*ft_strchr(const char *str, int c)
 	}
 	if (c == 0)
 		return ((char *)str);
-
 	return (NULL);
 }
