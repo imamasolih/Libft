@@ -6,10 +6,9 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/05 16:29:29 by imamasol          #+#    #+#             */
-/*   Updated: 2025/06/05 18:02:22 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/06/06 11:15:01 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #ifndef LIBFT_H
 # define LIBFT_H

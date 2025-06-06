@@ -6,7 +6,7 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/31 14:06:07 by imamasol          #+#    #+#             */
-/*   Updated: 2025/06/05 17:50:32 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/06/06 11:14:19 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,10 +35,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (!ret)
 		return (NULL);
 	while (s[start + i] && len > (size_t)i)
-		{
-			ret[i] = s[start + (i)];
-			i++;
-		}
+	{
+		ret[i] = s[start + (i)];
+		i++;
+	}
 	ret[i] = '\0';
 	return (ret);
 }

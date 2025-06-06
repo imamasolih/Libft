@@ -6,7 +6,7 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/31 15:08:32 by imamasol          #+#    #+#             */
-/*   Updated: 2025/06/05 16:14:44 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/06/06 11:14:11 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ static int	ft_trstart(char const *str, char const *srch)
 	}
 	return (i);
 }
+
 static int	ft_trend(char const *str, char const *srch)
 {
 	int	i;
@@ -56,6 +57,7 @@ static int	ft_trend(char const *str, char const *srch)
 	}
 	return (i);
 }
+
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	int		str;

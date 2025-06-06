@@ -6,7 +6,7 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/30 12:10:15 by imamasol          #+#    #+#             */
-/*   Updated: 2025/06/05 17:46:11 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/06/06 11:13:55 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ char	*ft_strnstr(const char *big, const char *srch, size_t n)
 		while (big[i + j] && srch[j] && i + j < n && big[i + j] == srch[j])
 			j++;
 		if (!srch[j])
-			return (char *)(big + i);
+			return ((char *)(big + i));
 		i++;
 	}
 	return (NULL);
