@@ -6,7 +6,7 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/05 12:06:11 by imamasol          #+#    #+#             */
-/*   Updated: 2025/06/06 17:31:28 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/06/07 14:25:24 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,3 +42,15 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 	ft_nbwrite(n, fd);
 }
+
+/* int	main(void)
+{
+	ft_putnbr_fd(42, 1);
+	write(1, "\n", 1);
+	ft_putnbr_fd(-12345, 1);
+	write(1, "\n", 1);
+	ft_putnbr_fd(0, 1);
+	write(1, "\n", 1);
+
+	return (0);
+} */

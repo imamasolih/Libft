@@ -6,7 +6,7 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/31 15:08:32 by imamasol          #+#    #+#             */
-/*   Updated: 2025/06/06 11:14:11 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/06/07 14:47:35 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,3 +82,21 @@ char	*ft_strtrim(char const *s1, char const *set)
 	*temp = '\0';
 	return (ret);
 }
+
+/* int main(void)
+{
+    char *s = "  \t\nHello, world! \n\t ";
+    char *set = " \n\t";
+
+    char *trimmed = ft_strtrim(s, set);
+    if (trimmed)
+    {
+        printf("Original: \"%s\"\n", s);
+        printf("Trimmed: \"%s\"\n", trimmed);
+        free(trimmed);
+    }
+    else
+        printf("ft_strtrim returned NULL\n");
+
+    return 0;
+} */

@@ -6,7 +6,7 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/31 16:58:22 by imamasol          #+#    #+#             */
-/*   Updated: 2025/06/06 14:38:53 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/06/07 14:27:59 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,3 +85,17 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (ft_mainfunc(ret, s, c));
 }
+
+/* int main(void)
+{
+    char **result = ft_split("hello, 42 evaluator test", ' ');
+
+    for (int i = 0; result[i] != NULL; i++)
+        printf("Word %d: %s\n", i, result[i]);
+
+    for (int i = 0; result[i] != NULL; i++)
+        free(result[i]);
+    free(result);
+
+    return 0;
+} */

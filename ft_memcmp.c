@@ -6,7 +6,7 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 23:07:18 by imamasol          #+#    #+#             */
-/*   Updated: 2025/06/06 10:44:25 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/06/07 14:16:58 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,19 @@ int	ft_memcmp(const void *ptr1, const void *ptr2, size_t num)
 	}
 	return (0);
 }
+/* int main(void)
+{
+    char a[] = "abcde";
+    char b[] = "abcdf";
+
+    int result = ft_memcmp(a, b, 5);
+
+    if (result == 0)
+        printf("Strings are equal\n");
+    else if (result < 0)
+        printf("a < b\n");
+    else
+        printf("a > b\n");
+	printf("Result: %d", result);
+    return 0;
+} */

@@ -6,7 +6,7 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/31 14:06:07 by imamasol          #+#    #+#             */
-/*   Updated: 2025/06/06 11:14:19 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/06/07 14:49:06 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,3 +42,19 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	ret[i] = '\0';
 	return (ret);
 }
+
+/* int main(void)
+{
+    char *s = "Hello, world!";
+    char *sub = ft_substr(s, 7, 5);
+
+    if (sub)
+    {
+        printf("Substring: %s\n", sub);
+        free(sub);
+    }
+    else
+        printf("ft_substr returned NULL\n");
+
+    return 0;
+} */

@@ -6,7 +6,7 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/30 18:20:23 by imamasol          #+#    #+#             */
-/*   Updated: 2025/06/06 10:59:38 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/06/07 14:31:25 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,3 +28,17 @@ char	*ft_strdup(const char *s)
 	*temp = '\0';
 	return (c);
 }
+
+/* int main(void)
+{
+    char *original = "Hello, world!";
+    char *copy = ft_strdup(original);
+
+    if (copy)
+        printf("Copy: %s\n", copy);
+    else
+        printf("ft_strdup returned NULL\n");
+    free(copy);
+
+    return 0;
+} */

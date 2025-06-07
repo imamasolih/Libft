@@ -6,7 +6,7 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/01 13:10:12 by imamasol          #+#    #+#             */
-/*   Updated: 2025/06/06 10:42:59 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/06/07 14:11:36 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,3 +82,23 @@ char	*ft_itoa(int n)
 	}
 	return (asnum);
 }
+/*
+int	main(void)
+{
+	int test_vals[] = {0, 1, -1, 42, -42, 123456, -123456, 2147483647,
+		-2147483648};
+	int num_tests = sizeof(test_vals) / sizeof(test_vals[0]);
+
+	for (int i = 0; i < num_tests; i++)
+	{
+		char *result = ft_itoa(test_vals[i]);
+		if (result)
+		{
+			printf("ft_itoa(%d) = \"%s\"\n", test_vals[i], result);
+			free(result);
+		}
+		else
+			printf("ft_itoa(%d) = NULL\n", test_vals[i]);
+	}
+	return (0);
+} //cc ft_itoa.c -L. -lft -o test  */

@@ -6,13 +6,14 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/05 16:29:29 by imamasol          #+#    #+#             */
-/*   Updated: 2025/06/06 11:15:01 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/06/07 14:11:25 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# include <stdio.h>
 # include <stddef.h>
 # include <stdlib.h>
 # include <unistd.h>

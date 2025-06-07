@@ -6,7 +6,7 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 16:05:36 by imamasol          #+#    #+#             */
-/*   Updated: 2025/06/05 16:14:32 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/06/07 14:45:15 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,17 @@ char	*ft_strrchr(const char *str, int c)
 		return ((char *)&str[len]);
 	return (NULL);
 }
+
+/* int main(void)
+{
+    const char *str = "Hello, world!";
+	char c = 'w';
+    char *res = ft_strrchr(str, c);
+
+    if (res)
+        printf("Last %c found at index: %ld\n", c,res - str);
+    else
+        printf("'o' not found\n");
+
+    return 0;
+} */

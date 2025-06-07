@@ -6,7 +6,7 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/28 23:04:11 by imamasol          #+#    #+#             */
-/*   Updated: 2025/06/06 10:48:00 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/06/07 14:21:38 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,3 +39,12 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+/* int main(void)
+{
+    char str[] = "abcdef";
+
+    ft_memmove(str, str + 2, 3);
+    printf("Result: %s\n", str);
+
+    return 0;
+} */
